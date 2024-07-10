@@ -3,10 +3,9 @@
 import { useState } from "react";
 import { uploadFile, uploadJson } from "@/utils/uploads";
 import * as constants from "../constants.config";
-import { EXPLORER_URL } from "../constants.config";
 import TonWeb from "tonweb";
 
-const { NftCollection, NftItem, NftMarketplace, NftSale } = TonWeb.token.nft;
+const { NftCollection, NftItem } = TonWeb.token.nft;
 
 const tonweb = new TonWeb(
   new TonWeb.HttpProvider(constants.NETWORK, {
